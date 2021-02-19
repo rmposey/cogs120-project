@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>Add Task</title>
+            <title>Dashboard</title>
             <link rel="stylesheet" href="css/styles.css">
             <meta charset="utf-8">
         </head>
@@ -11,6 +11,7 @@
                     <div class="menu-button-burger"></div>
                 </div>
                 <nav>
+                    <div class="openMenu"></div>
                     <div class="menu-background">
                         <ul class="menu">
                             <li><a href="home.html">Dashboard</a></li>
@@ -24,26 +25,10 @@
                 </nav>
                     <h1 class="app-name">RALI</h1>
             </header>
-            <br>
-            <h2>Add a New Task</h2>
-            <br>
-            <form class="activity-input">
-                <label for="activity-name">Name of Activity</label>
-                <input type="text" id="activity-name" name="activity-name">
-                <br>
-                <label for="activity-category">Category</label>
-                <select name="activity-category" id="activity-category">
-                    <option value="education">Education</option>
-                    <option value="finance">Finance</option>
-                    <option value="personal">Personal</option>
-                    <option value="work">Work</option>
-                </select>
-                <br>
-                <label for="activity-deadline">Deadline</label>
-                <input type="date" id="activity-deadline" name="activity-deadline">
-                <br>
-                <input type="submit" value="Submit">
-            </form>
+            <h2>Dashboard</h2>
+            <div class="progress-bar">
+                <img src="./images/progress-bar.png" alt="Progress Bar">
+            </div>
             <script src="js/app.js"></script>
         </body>
     </html>
