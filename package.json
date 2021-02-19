@@ -1,25 +1,23 @@
 {
-  "name": "IntroHCI",
-  "version": "0.0.1",
-  "author": "Intro HCI Staff",
-
+  "name": "cogs120-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "git+https://github.com/rmposey/cogs120-project.git"
   },
-  "license": "MIT",
-
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmposey/cogs120-project/issues"
   },
+  "homepage": "https://github.com/rmposey/cogs120-project#readme",
   "dependencies": {
-    "express": "3.x",
-    "express3-handlebars": "*",
-    "mongodb": "*",
-    "mongoose": "*"
-  },
-  "engines": {
-    "node": "8.9.x"
-  }  
+    "express": "^4.17.1"
+  }
 }
