@@ -174,3 +174,36 @@ h2 {
    justify-content: center;
    margin-top: 20px;
 }
+.task-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    padding-top: 30px;
+}
+.task-container {
+    display: flex;
+    flex-direction: row;
+    background-color:  rgb(81, 114, 115);
+    height: 80px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: rgb(35, 45, 45);
+}
+.task {
+    float: left;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-size: 30px;
+    color: white;
+}
+.done-button {
+    position: absolute;
+    right: 20px;
+    padding-right: 25px;
+    font-size: 30px;
+    color:rgb(35, 45, 45);
+    padding-top: 25px;
+}
