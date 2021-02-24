@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Add Task</title>
+            <link rel="stylesheet" href="css/styles.css">
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <header>    
+                <div class="menu-button">
+                    <div class="menu-button-burger"></div>
+                </div>
+                <nav>
+                    <div class="menu-background">
+                        <ul class="menu">
+                            <li><a href="index">Dashboard</a></li>
+                            <li><a href="addtask">Add Task</a></li>
+                            <li><a href="friends">Friends</a></li>
+                            <li><a href="settings">Settings</a></li>
+                            <li><a href="about">About</a></li>
+                            <div class="closeMenu"></div>
+                        </ul>
+                    </div>
+                </nav>
+                    <h1 class="app-name">RALI</h1>
+            </header>
+            <br>
+            <h2>Add a New Task</h2>
+            <br>
+            <form class="activity-input">
+                <label for="activity-name">Name of Activity</label>
+                <input type="text" id="activity-name" name="activity-name">
+                <br>
+                <label for="activity-category">Category</label>
+                <select name="activity-category" id="activity-category">
+                    <option value="education">Education</option>
+                    <option value="finance">Finance</option>
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                </select>
+                <br>
+                <label for="activity-deadline">Deadline</label>
+                <input type="date" id="activity-deadline" name="activity-deadline">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <script src="js/app.js"></script>
+        </body>
+    </html>
