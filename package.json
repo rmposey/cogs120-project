@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/rmposey/cogs120-project#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "connect": "^3.7.0",
+    "express": "^3.21.2",
+    "express-handlebars": "^5.2.1",
+    "express3-handlebars": "^0.5.2",
+    "handlebars": "^4.7.7"
   }
 }
