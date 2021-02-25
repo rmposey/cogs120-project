@@ -81,6 +81,9 @@ ul {
     padding-top: 2em;
     padding-left: 1em;
 }
+.menu li a .logout {
+    color: #ff9190
+}
 .menu li a {
     list-style-type: none;
     text-decoration: none;
@@ -104,7 +107,7 @@ ul {
     transition: all .5s ease-in-out;
 }
 .menu.open li a:hover {
-    color:rgb(255, 143, 102);
+    color:#ff9190;
 }
 
 header {
@@ -166,7 +169,6 @@ input[type=submit] {
    box-shadow:  4px 8px 8px 4px #00000024;
 }
 input[type=submit]:hover {
-    
     cursor: pointer;
 }
 select {
