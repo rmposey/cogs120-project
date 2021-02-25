@@ -1,0 +1,50 @@
+{
+	"competitions": [
+		{
+			"name": "Jon Snow",
+			"yourScore": "200",
+			"theirScore": "32",
+			"deadline": "02/28/2021"			
+		},
+		{
+			"name": "Spongebob",
+			"yourScore": "50",
+			"theirScore": "93",
+			"deadline": "02/28/2021"			
+		},
+		{
+			"name": "Jimmy John",
+			"yourScore": "543",
+			"theirScore": "512",
+			"deadline": "02/28/2021"			
+		},
+		{
+			"name": "Joe Biden",
+			"yourScore": "34",
+			"theirScore": "24",
+			"deadline": "02/28/2021"			
+		}
+	],
+	"activity": [
+		{
+			"name": "Jon Snow",
+			"task": "Finish CSE 100 PA",
+			"completed": true			
+		},
+		{
+			"name": "Jon Snow",
+			"task": "Read chapter 8 for CAT",
+			"completed": false			
+		},
+		{
+			"name": "John Smith",
+			"task": "Register to vote",
+			"completed": false			
+		},
+		{
+			"name": "John Hancock",
+			"task": "Sign Declaration of Independence",
+			"completed": true			
+		}
+	]
+}
