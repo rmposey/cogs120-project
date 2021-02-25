@@ -25,14 +25,18 @@
                         </ul>
                     </div>
                 </nav>
-                    <h1 class="app-name">RALI</h1>
+                <div class="app-name">RALI</div>
+                <div class="add-task-button">+</div>
             </header>
             <h2>Dashboard</h2>
             <div class="progress-bar">
                 <img src="./images/progress-bar.png" alt="Progress Bar" class="bar-image">
             </div>
             <div class="task-list-container">
-                <h1>Tasks</h1>
+                <div class="task-add-button-container">
+                    <h1 class="tasks">Tasks</h1>
+                    <a href="addtask"><div class="add-button">+</div></a>
+                </div>
                 {{#each tasks}}
                     <div class="task-list" id="{{id}}">
                         <div class="task-container">

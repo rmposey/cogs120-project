@@ -72,6 +72,9 @@ input[type=text]::placeholder {
 input[type=password]::placeholder {
     padding-left: 1.5em;
 }
+input[type=text]::-ms-value{
+    padding-left: 1.5em;
+}
 input[type=submit] {
     background-image: linear-gradient(to right,#ff9190,#fdc094);
     color: white;
