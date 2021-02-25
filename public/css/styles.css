@@ -18,7 +18,8 @@ body {
     height: 160px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    margin-left: 20px;
+    margin-left: 2em;
+    margin-top: 1em;
     
 }
 .menu-button-burger {
@@ -63,7 +64,7 @@ body {
     visibility: hidden;
     position: absolute;
     left: 0px;
-    margin-top: 14em;
+    margin-top: 16em;
     width: 100%;
     height: 100%;
     transition: all .5s ease-in-out;
@@ -92,7 +93,7 @@ ul {
     visibility: visible;
     position: fixed;
     transition: all .5s ease-in-out;
-    margin-top: 9em;
+    margin-top: 10em;
     background-color:rgba(255, 255, 255, 0.909);    
 }
 
@@ -112,10 +113,10 @@ header {
     justify-content: center;
 }
 .app-name {
-    font-size: 6em;
+    font-size: 7.2em;
     font-weight: 700;
     color: white;
-    padding-top: 15px;
+    padding-top: .1em;
 }
 /*Add Task Page*/
 /*Form*/
@@ -185,6 +186,7 @@ h2 {
     font-weight: 500;
     color: #ff9190;
     padding-top: 30px;
+    text-shadow: rgba(0, 0, 0, 0.082);
 }
 .progress-bar {
    display: flex;
@@ -222,7 +224,7 @@ h2 {
     float: right;
     padding: 1em;
     font-size: 2.5em;
-    background-image: linear-gradient(to right,#ff9190,#fdc094);;
+    background-image: linear-gradient(to right,#ff9190,#fdc094);
     font-weight: 600;
     color: white;
     border-radius: 4em;
@@ -231,6 +233,17 @@ h2 {
 }
  h1 {
      color: white;
-     font-size: 4em;
+     font-size: 5em;
      padding-left: .5em;
+
+ }
+ .tablink {
+     height: 2em;
+     font-size: 2.5em;
+     display: inline-flex;
+     padding: 1em;
+     border-radius: 1em;
+     border: none;
+     box-shadow:  4px 8px 8px 4px #00000024;
+     width: 100%;
  }
