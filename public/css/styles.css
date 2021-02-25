@@ -192,7 +192,8 @@ h2 {
    display: flex;
    justify-content: center;
    height: 30em;
-   margin: 5em;
+   margin-top: 5em;
+   margin-bottom: 5em;
 }
 .task-list {
     width: 100%;
