@@ -5,16 +5,17 @@
 
 }
 body {
-    background-color: darkslategrey;
+    background-image: linear-gradient(rgb(76, 147, 198),rgb(1, 115, 125));
     font-family: 'Work Sans', sans-serif;
+    height: 100vh;
 }
 
 /* burger menu and animation */
 .menu-button {
     position: absolute;
     left: 0px;
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     cursor: pointer;
     transition: all .5s ease-in-out;
     margin-left: 20px;
@@ -23,39 +24,39 @@ body {
 .menu-button-burger {
     position: absolute;
     left: 0px;
-    width: 50px;
-    height: 6px;
+    width: 100px;
+    height: 12px;
     background: white;
-    border-radius: 5px;   
+    border-radius: 10px;   
     transition: all .5s ease-in-out;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .menu-button-burger::before,
 .menu-button-burger::after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 100px;
+    height: 12px;
     background: white;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all .5s ease-in-out;
 }
 .menu-button-burger::before {
-    transform: translateY(-16px);
+    transform: translateY(-32px);
 }
 .menu-button-burger::after {
-    transform: translateY(16px);
+    transform: translateY(32px);
 }
 .menu-button.open .menu-button-burger {
-    transform: translateX(-50px);
+    transform: translateX(-100px);
     background: transparent;
     box-shadow: none;
 }
 .menu-button.open .menu-button-burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
+    transform: rotate(45deg) translate(70px, -70px);
 }
 .menu-button.open .menu-button-burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
+    transform: rotate(-45deg) translate(70px, 70px);
 }
 /* nav Menu */
 .menu {
@@ -82,7 +83,7 @@ ul {
 .menu li a {
     list-style-type: none;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2.5em;
     list-style: none;
     color: transparent;
     transition: all .5s ease-in-out;
@@ -92,13 +93,13 @@ ul {
     position: fixed;
     transition: all .5s ease-in-out;
     margin-top: 90px;
-    background-color: rgb(81, 114, 115);
+    background-color:rgba(255, 255, 255, 0.909);    
 }
 
 .menu.open li a{
     text-decoration: none;
-    font-size: 30px;
-    color: white;
+    font-size: 2.5em;
+    color: black;
     transition: all .5s ease-in-out;
 }
 .menu.open li a:hover {
@@ -111,7 +112,7 @@ header {
     justify-content: center;
 }
 .app-name {
-    font-size: 50px;
+    font-size: 6em;
     font-weight: 700;
     color: white;
     padding-top: 15px;
@@ -166,12 +167,13 @@ h2 {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
-    color: rgb(255, 143, 102);
+    color: rgb(255, 122, 73);
     padding-top: 30px;
 }
 .progress-bar {
    display: flex;
    justify-content: center;
+   height: 30em;
    margin-top: 20px;
 }
 .task-list {
@@ -184,27 +186,28 @@ h2 {
 .task-container {
     display: flex;
     flex-direction: row;
-    background-color:  rgb(81, 114, 115);
-    height: 80px;
-    margin-top: 15px;
-    margin-right: 20px;
-    margin-left: 20px;
+    background-color: white;
+    height: 6em;
+    margin-top: 1em;
+    margin-right: 2em;
+    margin-left: 2em;
     border-radius: 20px;
-    box-shadow: rgb(35, 45, 45);
+    opacity: 95%;
+    box-shadow:  4px 8px 8px 4px #00000024;;
 }
 .task {
     float: left;
     padding-left: 25px;
     padding-top: 25px;
-    font-size: 30px;
-    color: white;
+    font-size: 2.5em;
+    color: black;
 }
 .done-button {
     position: absolute;
     right: 20px;
-    padding-right: 25px;
-    font-size: 30px;
-    color:rgb(35, 45, 45);
+    padding-right: 2em;
+    font-size: 2.5em;
+    color: rgb(255, 122, 73);
     padding-top: 25px;
 }
  
