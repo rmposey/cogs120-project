@@ -27,10 +27,10 @@
                     <h1 class="app-name">RALI</h1>
             </header>
             <h2>Friends</h2>
-
-            <button class="tablink" onclick="openTab('Competitions', this)" id="defaultOpen">Competitions</button>
-            <button class="tablink" onclick="openTab('Activity', this)">Activity</button>
-
+            <div class="tab-container">
+                <button class="tablink" onclick="openTab('Competitions', this)" id="defaultOpen">Competitions</button>
+                <button class="tablink" onclick="openTab('Activity', this)">Activity</button>
+            </div>
             <div id="Competitions" class="tabcontent">
               <h1>Competitions</h1>
                 {{#each competitions}}
