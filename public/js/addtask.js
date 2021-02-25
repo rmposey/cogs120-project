@@ -3,7 +3,7 @@
 // var myNodelist = document.getElementsByTagName("LI");
 // var i;
 // var jsonData = JSON.parse('../../data.json');
-var data = require("../data.json");
+var data = require("../tasks.json");
 console.log(data);
 // for (i = 0; i < myNodelist.length; i++) {
 //   var span = document.createElement("SPAN");
