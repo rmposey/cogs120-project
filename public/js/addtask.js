@@ -3,8 +3,7 @@
 // var myNodelist = document.getElementsByTagName("LI");
 // var i;
 // var jsonData = JSON.parse('../../data.json');
-var data = require("../tasks.json");
-console.log(data);
+
 // for (i = 0; i < myNodelist.length; i++) {
 //   var span = document.createElement("SPAN");
 //   var txt = document.createTextNode("\u00D7");
@@ -14,16 +13,25 @@ console.log(data);
 // }
 
 // Create a new list item when clicking on the "Add" button
-function addTask() {
+function addTask(id) {
+  // console.log("connected")
   var li = document.createElement("li");
   var activityName = document.getElementById("activity-name").value;
   var deadline = document.getElementById("activity-deadline").value;
+  var category = document.getElementById("activity-category").value;
 
-  data.tasks.push({
-  	name: activityName,
-  	category: "Education",
-  	deadline: deadline,
-  	completed: false
-  });
-  jsonData = JSON.stringify(data);
+
+  // console.log(li)
+  // console.log(activityName)
+  // console.log(deadline)
+  // console.log(category)
+
+  $.post('createtask', {id: Math.floor(Math.random() * Math.floor(1000)),
+    name: activityName,
+    category: category,
+    deadline: deadline
+  })
+  
+  alert("Task added!");
+  document.getElementById("add-task-form").reset();
 }

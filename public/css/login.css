@@ -34,7 +34,7 @@ body {
     margin-top: 2em;
     align-items: center;
 }
-    
+
 #login {
     color: #ff9190;
     font-weight: bold;
@@ -100,7 +100,7 @@ input[type=submit] {
     border-radius: 20px;
     outline: none;
 }*/
-    
+
 /*#pass {
     color: rgba(136, 126, 126, 0.04);
     font-weight: 400;
@@ -109,15 +109,15 @@ input[type=submit] {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    
+
 }*/
-    
-   
+
+
 .un:focus, .pass:focus {
     border: 2px solid rgba(0, 0, 0, 0.18) !important;
-        
+
 }
-    
+
 /*#submit {
     cursor: pointer;
     border-radius: 5em;
@@ -133,7 +133,7 @@ input[type=submit] {
     font-size: 13px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);*/
 }
-    
+
 #forgot {
     color: grey;
     padding-top: 15px;

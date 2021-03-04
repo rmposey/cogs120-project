@@ -8,6 +8,7 @@ var login = require('./routes/login');
 var index = require('./routes/index');
 var addTask = require('./routes/addtask');
 var friends = require('./routes/friends');
+var createTask = require('./routes/createtask');
 
 var app = express()
 
@@ -36,6 +37,7 @@ app.use(express.static('static'));
 app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/addtask', addTask.view);
+app.post('/createtask', createTask.createtask);
 app.get('/friends', friends.view);
 // Example route
 // app.get('/users', user.list);
@@ -43,11 +45,3 @@ app.get('/friends', friends.view);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
-
-
-
-// start the server listening for requests
-// app.listen(process.env.PORT || 3000, 
-// 	() => console.log("Server is running..."));
-
-

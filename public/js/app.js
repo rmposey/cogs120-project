@@ -1,3 +1,5 @@
+'use strict'
+
 // hamburger menu button
 const menuBtn = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu')
@@ -18,5 +20,3 @@ menuBtn.addEventListener('click', () => {
     menuBackground.classList.remove('open');
   }
 });
-
-

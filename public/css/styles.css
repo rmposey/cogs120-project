@@ -247,6 +247,26 @@ h2 {
      padding-left: .5em;
 
  }
+.completed-task {
+    float: left;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    font-size: 2.5em;
+    text-decoration: line-through;
+}
+
+.completed-task-container {
+    display: inline-block;
+    background-color: gray;
+    border: none;
+    height: 8em;
+    margin-top: .5em;
+    margin-right: 2em;
+    margin-left: 2em;
+    border-radius: 4em;
+    opacity: 95%;
+    box-shadow:  4px 8px 8px 4px #00000024;
+}
  .task-add-button-container {
      width:100%;
      display: inline;
