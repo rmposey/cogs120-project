@@ -45,11 +45,3 @@ app.get('/friends', friends.view);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
-
-
-
-// start the server listening for requests
-// app.listen(process.env.PORT || 3000,
-// 	() => console.log("Server is running..."));
-
-
