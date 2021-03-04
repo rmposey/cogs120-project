@@ -1,8 +1,8 @@
-'use strict'
+// 'use strict'
 
 
-function completeTask(elmnt) {
-  console.log('click registered');
+// function completeTask(elmnt) {
+  // console.log('click registered');
   // Hide all elements with class="tabcontent" by default */
   // var i, tabcontent, tablinks;
   // tabcontent = document.getElementsByClassName("tabcontent");
@@ -21,7 +21,7 @@ function completeTask(elmnt) {
 
   // // Add the specific color to the button used to open the tab content
   // elmnt.style.backgroundColor = '#ff9190';
-}
+// }
 
 // Get the element with id="defaultOpen" and click on it
 // document.getElementById("defaultOpen").click();
