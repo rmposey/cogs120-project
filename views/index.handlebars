@@ -6,6 +6,8 @@
             <meta charset="utf-8">
             <script defer src="js/index.js"></script>
             <!-- <script src="handlebars-v4.7.6.js"></script> -->
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
         </head>
         <body>
             <header>    
@@ -43,7 +45,7 @@
                     <div class="task-list" id="{{id}}">
                         <div class="task-container">
                             <div class="task">{{name}}</div>
-                            <button class="done-button" onclick="completeTask(this)">DONE</button>
+                            <button class="done-button" onclick="completeTask(id)" id="{{id}}">DONE</button>
                         </div>
                     </div>
                     {{/unless}}

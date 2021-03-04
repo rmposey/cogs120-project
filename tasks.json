@@ -1,28 +1,32 @@
 {
 	"tasks": [
 		{
+			"id": "task1",
 			"name": "Read Chapter 6",
 			"category": "Education",
 			"deadline": "02/28/2021",
-			"completed": true			
+			"completed": true
 		},
 		{
+			"id": "task2",
 			"name": "Watch PSYC 108 Lecture",
 			"category": "Education",
 			"deadline": "02/28/2021",
-			"completed": false			
+			"completed": false
 		},
 		{
+			"id": "task3",
 			"name": "File Taxes",
 			"category": "Finance",
 			"deadline": "04/15/2021",
-			"completed": false			
+			"completed": false
 		},
 		{
+			"id": "task4",
 			"name": "TDDR 101 Production Calendar",
 			"category": "Education",
 			"deadline": "03/02/2021",
-			"completed": false			
+			"completed": false
 		}
 	]
 }

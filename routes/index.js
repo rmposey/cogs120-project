@@ -1,7 +1,6 @@
-// Get all of our friend data
+// Get all of our tasks
 var tasks = require('../tasks.json');
 
 exports.view = function(request, response){
-	console.log(tasks);
 	response.render('index', tasks);
 };

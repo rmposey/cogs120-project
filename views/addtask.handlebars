@@ -4,6 +4,9 @@
             <title>Add Task</title>
             <link rel="stylesheet" href="css/styles.css">
             <meta charset="utf-8">
+            <script defer src="js/addtask.js"></script>
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
         </head>
         <body>
             <header>    
@@ -44,8 +47,9 @@
                     <label for="activity-deadline">Deadline</label>
                     <input type="date" id="activity-deadline" name="activity-deadline">
                     <br>
-                    <input type="submit" value="Add Task">
-                </form>
+
+                    </form>
+                <button class="done-button" onclick="addTask(id)" id="{{id}}">Add Task</button>
             </div>
             <script src="js/app.js"></script>
         </body>

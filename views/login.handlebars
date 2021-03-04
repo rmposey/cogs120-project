@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login</title>
   <script defer src="js/login.js"></script>
-  {{> facebook}}
-  <script src="/js/facebook.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -18,16 +18,13 @@
     </header>
     <div class="main">
         <h1 id="login" align="center">Login</h1>
+
         <form id="login-form">
             <input id="username" name="username" type="text" align="center" placeholder="Username">
             <input id="pass" name="password" type="password" align="center" placeholder="Password">
             <a id="submit"><input type="submit" value="LOGIN"></a>
             <p id="forgot" align="center"><a href="#">Forgot Password?</p>     
         </form>
-        <p class = "facebookLogin" align="center"> 
-          <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-          </fb:login-button>
-        </p>
     </div>  
 </body>
 
