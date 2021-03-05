@@ -283,14 +283,21 @@ h2 {
     border-radius: .6em;
     box-shadow:  4px 8px 8px 4px #00000024;
 }
+.tab-container-dash {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Friends Page*/
  h1 {
     color: white;
     font-size: 5em;
     padding-left: .5em;
-
  }
-
  .tab-container {
     margin-top: 2em;
     margin-bottom: 2em;
