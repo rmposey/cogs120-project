@@ -35,33 +35,49 @@
             <div class="progress-bar">
                 <img src="./images/progress-bar.png" alt="Progress Bar" class="bar-image">
             </div>
+
+
+            
+
             <div class="task-list-container">
                 <div class="task-add-button-container">
                     <h1 class="tasks">Tasks</h1>
                     <a href="addtask"><div class="add-button">+</div></a>
                 </div>
-                <div class="task-list">
-                {{#each tasks}}
-                    {{#unless completed}}
-                    <div class="task-list" id="{{id}}">
-                        <div class="task-container">
-                            <div class="task">{{name}}</div>
-                            <button class="done-button" onclick="completeTask(id)" id="{{id}}">DONE</button>
-                        </div>
-                    </div>
-                    {{/unless}}
-                {{/each}}
 
-                {{#each tasks}}
-                    {{#if completed}}
+            <div class="tab-container">
+                <button class="tablink" onclick="openTab('inProgress', this)" id="defaultOpen">In Progress</button>
+                <button class="tablink" onclick="openTab('completed', this)">Completed</button>
+            </div>
+
+
+
+            <div class="task-list">
+                <div id="inProgress" class="tabcontent">
+                    {{#each tasks}}
+                        {{#unless completed}}
                         <div class="task-list" id="{{id}}">
-                            <div class="completed-task-container">
-                                <div class="completed-task">{{name}}</div>
+                            <div class="task-container">
+                                <div class="task">{{name}}</div>
+                                <button class="done-button" onclick="completeTask(id)" id="{{id}}">DONE</button>
                             </div>
                         </div>
-                    {{/if}}
-                {{/each}}
+                        {{/unless}}
+                    {{/each}}
                 </div>
+
+                <div id="completed" class="tabcontent">
+                    {{#each tasks}}
+                        {{#if completed}}
+                            <div class="task-list" id="{{id}}">
+                                <div class="completed-task-container">
+                                    <div class="completed-task">{{name}}</div>
+                                </div>
+                            </div>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
                 <script src="js/app.js"></script>
             </div>
         </body>
